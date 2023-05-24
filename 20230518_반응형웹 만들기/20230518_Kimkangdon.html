@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- bxslider -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script>
+        $(document).ready(function () {
+            $(".slider").bxSlider();
+            $('.bxslider').bxSlider({
+                pagerCustom: '#bx-pager',
+                captions: true,
+            });
+        });
+    </script>
+
+
+
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        body {
+            position: relative;
+        }
+
+        header {
+            position: relative;
+        }
+
+        #gnb {
+            height: 48px;
+            background-color: #222;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 25px
+        }
+
+        #gnb a {
+            text-decoration: none;
+            color: none
+        }
+
+        #gnb div {
+            font-size: 1em;
+            color: white;
+            margin: 0 10px
+        }
+
+        #gnb img {
+            height: 1em;
+        }
+
+
+        #lnb {
+            margin-top: 48px;
+            width: 100%;
+            background-color: #000;
+        }
+
+        #lnb a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #lnb a div {
+            display: flex;
+            align-items: center;
+        }
+
+        #lnb img {
+            height: 30px;
+        }
+
+        #toggle {
+            display: block;
+            background: #000;
+            padding: 10px 10px 10px 30px;
+        }
+
+        #lnb ul>li {
+            text-align: left;
+            padding: 13px;
+            padding-left: 30px;
+            border-top: 1px solid #242424;
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+        #lnb ul li a:hover {
+            color: #d55
+        }
+
+
+
+
+
+
+        #MainBody {
+            width: 100%;
+            background-image: url('source/img/background_mobile_long.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #Intro {
+            padding-top: 0;
+            width: 100%;
+            overflow: hidden;
+            background-color: #000;
+            margin: 0 auto;
+        }
+
+        #Title_Video {
+            height: 0px;
+            max-width: 1080px;
+            /* border: orangered 3px solid; */
+        }
+
+        #Title_Video video {
+            display: flex;
+            justify-content: center;
+            width: 110%;
+        }
+
+        #Center_logo {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border : yellow 3px solid; */
+        }
+
+        #Center_logo img {
+            width: 100%;
+            max-width: 1080px;
+        }
+
+        #MainPage {
+            width: 100%;
+            padding-top: 10px;
+        }
+
+        #MainPage .InnerPage {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .Row_bar {
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+
+        .Row_bar fieldset {
+            border: none;
+            border-top: #000 3px solid;
+            text-align: center;
+        }
+
+        .Row_bar img {
+            width: 50px;
+            margin: 30px;
+        }
+
+        .InnerPage {
+            max-width: 960px;
+            margin: 50px 0 80px 0;
+        }
+
+        .InnerPage>#page_01>h1 {
+            font-size: 2.5em;
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 25px;
+        }
+
+        .InnerPage>#page_01>p {
+            font-size: 1.5em;
+            line-height: 1.8em;
+            margin: 25px 10px;
+        }
+
+        #page_02 {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .about_game {
+            width: 100%;
+            margin: 50px 0;
+            padding: 50px 0;
+        }
+
+        .about_game>img {
+            width: 100%;
+        }
+
+        .about_game>div {
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        .about_game>div>h2 {
+            margin: 20px 0;
+            font-size: 2em;
+
+        }
+
+        .about_game>div>p {
+            font-size: 1.4em;
+            line-height: 1.6em;
+        }
+
+        article {
+            padding-top: 0;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .sub_title {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .sub_title h1 {
+            font-size: 2.5em;
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 25px;
+        }
+
+        .sub_title p {
+            font-size: 1.5em;
+            line-height: 1.5em;
+            margin: 20px 10px;
+            text-align: center;
+            padding: 0 5%
+        }
+
+        #carousel {
+            width: 100%;
+            max-width: 1960px;
+            margin: 0 auto;
+        }
+
+        .bxslider {
+            display: flex;
+            height: 35vw;
+            min-height: 500px;
+            text-align: center;
+        }
+
+        .bxslider li {
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bx-wrapper .bx-caption span {
+            font-size: 2em;
+        }
+
+        #Legend_int {
+            width: 100%;
+            padding-bottom: 150px;
+        }
+
+        #Class_list {
+            width: 100%;
+            max-width: 1960px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .Class_bg {
+            width: 100%;
+            height: 300px;
+            background-image: url('source/img/bg/1x/long.png');
+            background-size: cover;
+            background-position-y: center;
+            background-position-x: right;
+            background-repeat: no-repeat;
+            background-size: auto 90%;
+            /* border-top: rgb(100, 100, 100) solid 3px;
+            border-bottom: rgb(100, 100, 100) solid 3px; */
+            margin: 10px 0;
+            overflow: hidden;
+
+        }
+
+        .Legend_class {
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 75px;
+            border-collapse: collapse;
+            text-align: right;
+            position: relative;
+            color: rgb(255, 255, 255);
+        }
+
+        .Legend_class h3 {
+            font-size: 2.5em;
+        }
+
+        .Legend_class h3>span {
+            font-size: 0.7em;
+        }
+
+        .Legend_class p {
+            font-size: 1.5em;
+            margin: 20px 10px;
+        }
+
+        .L_Cover {
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: all 0.5s;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0));
+            opacity: 0;
+        }
+
+        .L_Cover:hover {
+            opacity: 1;
+        }
+
+
+        #Class_ALL {
+            background-image: url("source/img/logo/APEX_logo_black.png");
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position-y: center;
+            background-position-x: 10%;
+
+        }
+
+        #Class_Assault {
+            background-image: url("source/img/Legend/Assault.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: 10%;
+        }
+
+        #Class_Skirmisher {
+            background-image: url("source/img/Legend/Skirmisher.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: 10%;
+        }
+
+        #Class_Recon {
+            background-image: url("source/img/Legend/Recon.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: 10%;
+        }
+
+        #Class_Support {
+            background-image: url("source/img/Legend/Support.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: 10%;
+        }
+
+        #Class_Controller {
+            background-image: url("source/img/Legend/Controller.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: 10%;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #222;
+        }
+
+        footer #footer_menu {
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            border-bottom: 1px solid #666
+        }
+
+        footer #footer_menu a {
+            width: 50%;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #ccc
+        }
+
+        footer #footer_menu a:hover {
+            color: #d55
+        }
+
+        footer #SNS {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            border-bottom: 1px solid #666
+        }
+
+        footer #SNS p {
+            padding: 10px 10px;
+            color: #ccc
+        }
+
+        footer #SNS img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        footer #service {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        footer #service img {
+            margin: 20px;
+        }
+
+        @media screen and (min-width : 720px) {
+
+            #lnb {
+                width: 100%;
+            }
+
+            #lnb ul {
+                display: none;
+            }
+
+            #lnb a#toggle {
+                display: none;
+            }
+
+            #lnb ul {
+                display: block !important;
+                height: 48px;
+                width: 100%;
+                max-width: 720px;
+                margin: 0 auto;
+
+
+            }
+
+            #lnb ul li {
+                width: 25%;
+                border: none;
+                list-style: none;
+                float: left;
+                text-align: center;
+            }
+
+            #Title_Video video {
+                height: 110vh;
+                width: auto;
+            }
+
+            #Class_list {
+                width: 100%;
+                margin: 0 auto;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+
+
+
+        }
+
+        @media screen and (min-width : 1080px) {
+
+            #page_02 {
+                display: flex;
+                max-width: 1620px;
+            }
+
+            .about_game {
+                padding: 5px
+            }
+
+            #Legend_int {
+                width: 100%;
+                max-width: 1600px;
+            }
+
+            .Class_bg {
+                width: 700px;
+                margin: 10px 20px;
+                border: 5px solid rgb(110, 110, 110);
+                border-radius: 10px;
+            }
+
+            footer #footer_menu {
+                justify-content: center;
+            }
+
+            footer #footer_menu a {
+                width: auto;
+                padding: 10px 20px;
+                text-decoration: none;
+            }
+
+            footer #SNS {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            footer #service {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+        }
+    </style> -->
+
+    <style type="text/css">
+        #bx-pager {
+            text-align: center;
+            margin-top: -30px;
+        }
+
+        #bx-pager a {
+            margin: 0 3px;
+        }
+
+        #bx-pager a img {
+            width: 100px;
+            padding: 3px;
+            border: solid #ccc 1px
+        }
+
+        #bx-pager a.active img {
+            width: 100px;
+            border: solid #5280DD 1px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="gnb">
+            <a href="#">
+                <div>Account</div>
+            </a>
+            <a href="#">
+                <div>FAQ</div>
+            </a>
+            <a href="#">
+                <div><img src="source/img/logo/EA_white.png" alt=""></div>
+            </a>
+        </div>
+
+        <div id="lnb">
+            <a href="#" id="toggle">
+                <div><img src="source/img/toggle_icon.png"></div>
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#index_1">Apex League</a></li>
+                <li><a href="#index_2">Maps</a></li>
+                <li><a href="#index_3">Legend</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="MainBody">
+
+        <article id="Intro">
+            <div id="Title_Video">
+                <video src="source/video/video_wide.webm" loop="true" muted="true" autoplay="true"></video>
+            </div>
+            <div id="Center_logo">
+                <img src="source/img/logo/APEX_logo_with-symbol.png" alt="">
+            </div>
+        </article>
+
+        <article id="MainPage">
+
+            <div class="Row_bar" id="index_1">
+                <fieldset>
+                    <legend><img src="source/img/logo/Apex_mark_black.png" alt=""></legend>
+                </fieldset>
+            </div>
+
+            <div class="InnerPage">
+                <div id="page_01">
+                    <h1>모든 것이 허용되는 세상</h1>
+                    <p>&nbsp; 프런티어 전쟁은 끝났습니다. IMC와 저항군의 전쟁이 끝난 지 수십 년이 지난 후 "프런티어" 로 알려진 우주 변방 지역에도 마침내 평화가 찾아왔습니다.</p>
+                    <p>&nbsp; 하지만 자유에는 대가가 따르는 법. 프런티어에는 전쟁으로 황폐해진 채 버려지고, 약속되었던 지원은 기약이 없습니다. 스스로 삶을 지탱할 방법이 없었던 남은
+                        사람들은 고향을 등지고 떠날 수 밖에 없었습니다. 그리고 용감한 이들은 아웃랜드로 눈을 돌렸습니다.</p>
+                    <p>&nbsp; 프런티어 외곽에 위치한 외딴 행성들의 집합체인 아웃랜드는 전쟁의 화마가 닿지 않았으며, 풍족한 자원과 많은 기회가 있는 곳입니다. 하지만 이곳에서 목숨은
+                        헐값이며, 곳곳에 위험이 도사리고 있습니다. 개척자, 탐험가, 무법자들은 끝없는 권력 투쟁으로 세월을 보냈으며 지금은 프런티어 각지에서 온 '레전드'라 불리는 자들이 부,
+                        명성, 영광을 위해 경쟁하는 피의 경기인 'Apex 게임'에 참여하고 있습니다.</p>
+                </div>
+            </div>
+
+
+            <div id="page_02">
+                <div class="about_game">
+                    <img src="source/img/aboutGame/play_01.jpg">
+                    <div>
+                        <h2>전략적 분대 플레이</h2>
+                        <p>배틀 로얄에서 거대한 공중 도시에서 싸우거나, 기간 한정 모드에서 근거리 전투를 펼칠 때는 신속하게 판단해야 합니다. 레전드의 독특한 능력을 마스터하고 팀원과 협력해
+                            새로운 전술과 강력한 조합을 알아보세요.</p>
+                    </div>
+                </div>
+
+                <div class="about_game">
+                    <img src="source/img/aboutGame/play_02.jpg">
+                    <div>
+                        <h2>혁신적인 전투</h2>
+                        <p>계속해서 수가 늘어나는 강력한 무기와 장비를 마스터하세요. 장비를 최대한 활용하려면 빠르게 움직이면서 각 무기의 특성을 배워야 합니다. 또한 시즌마다 추가되는 새로운
+                            콘텐츠를 만나보세요.</p>
+                    </div>
+                </div>
+
+                <div class="about_game">
+                    <img src="source/img/aboutGame/play_03.jpg">
+                    <div>
+                        <h2>끊임없이 확장하는 세계</h2>
+                        <p>Apex 레전드는 몰입감 넘치는 세계에서 이야기가 계속 펼쳐지고, 맵이 바뀌며, 새로운 레전드가 계속해서 전투에 참가합니다. 다양하고 독특한 의상으로 Apex 게임에
+                            자신의 흔적을 남기고 모험에 참여하세요!</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </article>
+
+        <div class="Row_bar" id="index_2">
+            <fieldset>
+                <legend><img src="source/img/logo/Apex_mark_black.png" alt=""></legend>
+            </fieldset>
+        </div>
+
+        <article id="Map_int">
+            <div class="sub_title">
+                <h1>다양한 전장, 색다른 전투</h1>
+                <p>5개의 특색있는 전장에서 다양한 전투를 경험하세요!</p>
+            </div>
+            <div id="carousel">
+                <ul class="bxslider">
+                    <li><img src="source/img/Maps/Map_kings_canyon.jpg" title="킹스 캐년 (Kings Canyon)" /></li>
+                    <li><img src="source/img/Maps/Map_Olympus.jpg" title="올림푸스 (Olympus)" /></li>
+                    <li><img src="source/img/Maps/Map_world_edge.jpg" title="세상의 끝 (World's Edge)" /></li>
+                    <li><img src="source/img/Maps/Map_strom_point.jpg" title="스톰 포인트 (Strom Point)" /></li>
+                    <li><img src="source/img/Maps/Map_broken_moon.jpg" title="브로큰 문 (Broken Moon)" /></li>
+                </ul>
+
+                <div id="bx-pager">
+                    <a data-slide-index="0" href=""><img src="source/img/Maps/thumbnail/Map_kings_canyon.png" /></a>
+                    <a data-slide-index="1" href=""><img src="source/img/Maps/thumbnail/Map_Olympus.png" /></a>
+                    <a data-slide-index="2" href=""><img src="source/img/Maps/thumbnail/Map_world_edge.png" /></a>
+                    <a data-slide-index="3" href=""><img src="source/img/Maps/thumbnail/Map_strom_point.png" /></a>
+                    <a data-slide-index="4" href=""><img src="source/img/Maps/thumbnail/Map_broken_moon.png" /></a>
+                </div>
+            </div>
+        </article>
+
+        <div class="Row_bar" id="index_3">
+            <fieldset>
+                <legend><img src="source/img/logo/Apex_mark_black.png" alt=""></legend>
+            </fieldset>
+        </div>
+
+        <article id="Legend_int">
+            <div class="sub_title">
+                <h1>레전드 소개</h1>
+                <p>좋아하는 캐릭터를 선택해, 각자의 고유한 능력으로 팀을 돕는 방법을 알아보십시오.</p>
+            </div>
+
+            <div id="Class_list">
+
+                <div class="Class_bg">
+                    <div class="Legend_class" id="Class_ALL">
+                        <h3>모든 레전드</h3>
+                        <p>Apex의 모든 레전드 보기</p>
+                        <div class="L_Cover"></div>
+                    </div>
+                </div>
+                <div class="Class_bg">
+                    <div class="Legend_class" id="Class_Assault">
+                        <h3>어설트<span>(Assault)</span></h3>
+                        <p>전투개시와 유틸리티에 특화</p>
+                        <div class="L_Cover"></div>
+                    </div>
+                </div>
+                <div class="Class_bg">
+                    <div class="Legend_class" id="Class_Skirmisher">
+                        <h3>스커미셔<span>(Skirmisher)</span></h3>
+                        <p>높은 전투 기동성과 탈출능력</p>
+                        <div class="L_Cover"></div>
+                    </div>
+                </div>
+                <div class="Class_bg">
+                    <div class="Legend_class" id="Class_Recon">
+                        <h3>리콘<span>(Recon)</span></h3>
+                        <p>색적과 추적에 특화된 추적자</p>
+                        <div class="L_Cover"></div>
+                    </div>
+                </div>
+                <div class="Class_bg">
+                    <div class="Legend_class" id="Class_Support">
+                        <h3>서포트<span>(Support)</span></h3>
+                        <p>팀 생존 및 보급을 담당</p>
+                        <div class="L_Cover"></div>
+                    </div>
+                </div>
+                <div class="Class_bg">
+                    <div class="Legend_class" id="Class_Controller">
+                        <h3>컨트롤러<span>(Controller)</span></h3>
+                        <p>지역 점거와 컨트롤</p>
+                        <div class="L_Cover"></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+    </section>
+
+    <footer>
+        <div id="footer_menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Maps</a>
+            <a href="#">Legends</a>
+            <a href="#">PC Specs</a>
+            <a href="#">News</a>
+            <a href="#">Media</a>
+            <a href="#">Forums</a>
+            <a href="#">Play Free Now*</a>
+        </div>
+        <div id="SNS">
+            <p>JOIN THE CONVERSATION</p>
+            <div>
+                <img src="source/img/footer/sns/twitter.png" alt="">
+                <img src="source/img/footer/sns/twitch.png" alt="">
+                <img src="source/img/footer/sns/facebook.png" alt="">
+                <img src="source/img/footer/sns/youtube.png" alt="">
+            </div>
+        </div>
+        <div id="service">
+            <img src="source/img/footer/footer_img_01.png" alt="">
+            <img src="source/img/footer/apex-respawn-white-logo.png" alt="">
+        </div>
+
+    </footer>
+
+    <script>
+        let toggle = $('#toggle');
+        let menu = $('#lnb ul');
+        $(toggle).on('click', function (e) {
+            e.preventDefault();
+            menu.slideToggle();
+        })
+    </script>
+
+</body>
+
+</html>

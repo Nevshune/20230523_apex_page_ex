@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    position: relative;
+}
+
+#gnb {
+    height: 48px;
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px
+}
+
+#gnb a {
+    text-decoration: none;
+    color: none
+}
+
+#gnb div {
+    font-size: 1em;
+    color: white;
+    margin: 0 10px
+}
+
+#gnb img {
+    height: 1em;
+}
+
+
+#lnb {
+    margin-top: 48px;
+    width: 100%;
+    background-color: #000;
+}
+
+#lnb a {
+    text-decoration: none;
+    color: white;
+}
+
+#lnb a div {
+    display: flex;
+    align-items: center;
+}
+
+#lnb img {
+    height: 30px;
+}
+
+#toggle {
+    display: block;
+    background: #000;
+    padding: 10px 10px 10px 30px;
+}
+
+#lnb ul>li {
+    text-align: left;
+    padding: 13px;
+    padding-left: 30px;
+    border-top: 1px solid #242424;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#lnb ul li a:hover {
+    color: #d55
+}
+
+
+
+
+
+
+#MainBody {
+    width: 100%;
+    background-image: url('../source/img/background_mobile_long.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#Intro {
+    padding-top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    margin: 0 auto;
+}
+
+#Title_Video {
+    height: 0px;
+    max-width: 1080px;
+    /* border: orangered 3px solid; */
+}
+
+#Title_Video video {
+    display: flex;
+    justify-content: center;
+    width: 110%;
+}
+
+#Center_logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border : yellow 3px solid; */
+}
+
+#Center_logo img {
+    width: 100%;
+    max-width: 1080px;
+}
+
+#MainPage {
+    width: 100%;
+    padding-top: 10px;
+}
+
+#MainPage .InnerPage {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.Row_bar {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.Row_bar fieldset {
+    border: none;
+    border-top: #000 3px solid;
+    text-align: center;
+}
+
+.Row_bar img {
+    width: 50px;
+    margin: 30px;
+}
+
+.InnerPage {
+    max-width: 960px;
+    margin: 50px 0 80px 0;
+}
+
+.InnerPage>#page_01>h1 {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.InnerPage>#page_01>p {
+    font-size: 1.5em;
+    line-height: 1.8em;
+    margin: 25px 10px;
+}
+
+#page_02 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about_game {
+    width: 100%;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+
+.about_game>img {
+    width: 100%;
+}
+
+.about_game>div {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.about_game>div>h2 {
+    margin: 20px 0;
+    font-size: 2em;
+
+}
+
+.about_game>div>p {
+    font-size: 1.4em;
+    line-height: 1.6em;
+}
+
+article {
+    padding-top: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sub_title {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.sub_title h1 {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.sub_title p {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 20px 10px;
+    text-align: center;
+    padding: 0 5%
+}
+
+#carousel {
+    width: 100%;
+    max-width: 1960px;
+    margin: 0 auto;
+}
+
+.bxslider {
+    display: flex;
+    height: 35vw;
+    min-height: 500px;
+    text-align: center;
+}
+
+.bxslider li {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.bx-wrapper .bx-caption span {
+    font-size: 2em;
+}
+
+#Legend_int {
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+#Class_list {
+    width: 100%;
+    max-width: 1960px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Class_bg {
+    width: 100%;
+    height: 300px;
+    background-image: url('../source/img/bg/1x/long2.png');
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    /* border-top: rgb(100, 100, 100) solid 3px;
+    border-bottom: rgb(100, 100, 100) solid 3px; */
+    margin: 10px 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.Class_bg:hover {
+    background-image: url('../source/img/bg/1x/long.png');
+   
+}
+
+
+.Legend_class {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 75px;
+    border-collapse: collapse;
+    text-align: right;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+.Legend_class h3 {
+    font-size: 2.5em;
+}
+
+.Legend_class h3>span {
+    font-size: 0.7em;
+}
+
+.Legend_class p {
+    font-size: 1.5em;
+    margin: 20px 10px;
+}
+
+.L_Cover {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+
+
+
+#Class_ALL {
+    background-image: url("../source/img/logo/APEX_logo_black.png");
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position-y: center;
+    background-position-x: 10%;
+
+}
+
+#Class_Assault {
+    background-image: url("../source/img/Legend/Assault.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 10%;
+}
+
+#Class_Skirmisher {
+    background-image: url("../source/img/Legend/Skirmisher.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 10%;
+}
+
+#Class_Recon {
+    background-image: url("../source/img/Legend/Recon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 10%;
+}
+
+#Class_Support {
+    background-image: url("../source/img/Legend/Support.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 10%;
+}
+
+#Class_Controller {
+    background-image: url("../source/img/Legend/Controller.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 10%;
+}
+
+footer {
+    width: 100%;
+    background-color: #222;
+}
+
+footer #footer_menu {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 1px solid #666
+}
+
+footer #footer_menu a {
+    width: 50%;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ccc
+}
+
+footer #footer_menu a:hover {
+    color: #d55
+}
+
+footer #SNS {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-bottom: 1px solid #666
+}
+
+footer #SNS p {
+    padding: 10px 10px;
+    color: #ccc
+}
+
+footer #SNS img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+footer #service {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer #service img {
+    margin: 20px;
+}
+
+@media screen and (min-width : 720px) {
+
+    #lnb {
+        width: 100%;
+    }
+
+    #lnb ul {
+        display: none;
+    }
+
+    #lnb a#toggle {
+        display: none;
+    }
+
+    #lnb ul {
+        display: block !important;
+        height: 48px;
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+
+
+    }
+
+    #lnb ul li {
+        width: 25%;
+        border: none;
+        list-style: none;
+        float: left;
+        text-align: center;
+    }
+
+    #Title_Video video {
+        height: 110vh;
+        width: auto;
+    }
+
+    #Class_list {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width : 1080px) {
+
+    #page_02 {
+        display: flex;
+        max-width: 1620px;
+    }
+
+    .about_game {
+        padding: 5px
+    }
+
+    #Legend_int {
+        width: 100%;
+        max-width: 1600px;
+    }
+
+    .Class_bg {
+        width: 700px;
+        margin: 10px 20px;
+        border: 5px solid rgb(110, 110, 110);
+        border-radius: 10px;
+    }
+
+    footer #footer_menu {
+        justify-content: center;
+    }
+
+    footer #footer_menu a {
+        width: auto;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    footer #SNS {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer #service {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
